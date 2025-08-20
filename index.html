@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dijkstra’s Algorithm Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Dijkstra’s Algorithm Calculator</h1>
+      <p>Discovering Optimal Routes Through Nodes Using Dijkstra's Method</p>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <div class="left">
+          <h3>Select Path</h3>
+          <label for="from">From Node</label>
+          <select id="from" required>
+            <option value="" disabled selected>Select</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+          </select>
+
+          <label for="to">To Node</label>
+          <select id="to" required>
+            <option value="" disabled selected>Select</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+          </select>
+
+          <div class="buttons">
+            <button class="clear-btn" id="clearBtn">Clear</button>
+            <button class="calc-btn" id="calcBtn" disabled>
+              Calculate
+              <img src="cal.png" alt="calculator icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="right" id="rightPanel">
+          <img src="image-placeholder.png" alt="placeholder" />
+        </div>
+
+        <div class="result" id="resultPanel" style="display: none">
+          <h3>Result</h3>
+          <div class="result-box" id="resultBox"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
